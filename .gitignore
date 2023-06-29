@@ -1,0 +1,13 @@
+## User settings
+xcuserdata/
+Pods/
+
+*.DS_Store
+
+
+## App packaging
+*.ipa
+
+.build/
+
+Rick&MortyTest 2023-29-06 17-12-31/

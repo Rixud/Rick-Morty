@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites View Controller-->
+        <scene sceneID="gDr-zl-bsC">
+            <objects>
+                <viewController storyboardIdentifier="Fav" id="ulz-el-o8G" customClass="FavoritesViewController" customModule="O2OTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4X-TA-QNB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NlD-j2-tXx">
+                                <rect key="frame" x="15" y="15" width="570" height="47"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="39"/>
+                                <color key="textColor" name="labelColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-0a-RRL">
+                                <rect key="frame" x="0.0" y="82" width="600" height="518"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l8T-dY-DXU"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="l8T-dY-DXU" firstAttribute="trailing" secondItem="KOM-0a-RRL" secondAttribute="trailing" id="4nt-vG-xfg"/>
+                            <constraint firstItem="l8T-dY-DXU" firstAttribute="trailing" secondItem="NlD-j2-tXx" secondAttribute="trailing" constant="15" id="Be4-Jk-QaU"/>
+                            <constraint firstItem="KOM-0a-RRL" firstAttribute="leading" secondItem="l8T-dY-DXU" secondAttribute="leading" id="jwn-b4-3KO"/>
+                            <constraint firstItem="NlD-j2-tXx" firstAttribute="top" secondItem="l8T-dY-DXU" secondAttribute="top" constant="15" id="mzm-ep-zWn"/>
+                            <constraint firstItem="l8T-dY-DXU" firstAttribute="bottom" secondItem="KOM-0a-RRL" secondAttribute="bottom" id="ofu-7R-I0H"/>
+                            <constraint firstItem="NlD-j2-tXx" firstAttribute="centerX" secondItem="I4X-TA-QNB" secondAttribute="centerX" id="u0i-RP-Dmb"/>
+                            <constraint firstItem="KOM-0a-RRL" firstAttribute="top" secondItem="NlD-j2-tXx" secondAttribute="bottom" constant="20" id="yyR-dp-7LB"/>
+                            <constraint firstItem="NlD-j2-tXx" firstAttribute="leading" secondItem="l8T-dY-DXU" secondAttribute="leading" constant="15" id="zkY-fk-XYK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yd3-JL-rOO"/>
+                    <connections>
+                        <outlet property="charTable" destination="KOM-0a-RRL" id="Rrp-me-eJK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ay0-3G-rEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="346" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.17800000309944153" green="0.17800000309944153" blue="0.18999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

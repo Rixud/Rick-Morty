@@ -1,0 +1,24 @@
+PODS:
+  - Gifu (3.3.1)
+  - Kingfisher (7.8.0)
+  - MarqueeLabel (4.3.0)
+
+DEPENDENCIES:
+  - Gifu
+  - Kingfisher
+  - MarqueeLabel
+
+SPEC REPOS:
+  trunk:
+    - Gifu
+    - Kingfisher
+    - MarqueeLabel
+
+SPEC CHECKSUMS:
+  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
+  Kingfisher: 0656e1b064bfc1ca1cd04e033f617a86559696e9
+  MarqueeLabel: 02f5ac8fd6877c94564556cb93fa86c70c08baeb
+
+PODFILE CHECKSUM: 3886a11acd209cecc86262c1e097276fd333730e
+
+COCOAPODS: 1.12.1

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile View Controller-->
+        <scene sceneID="gDr-zl-bsC">
+            <objects>
+                <viewController storyboardIdentifier="Profile" id="ulz-el-o8G" customClass="ProfileViewController" customModule="Rick_MortyTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4X-TA-QNB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DaT-f9-6vM" userLabel="GIFImageView" customClass="GIFImageView" customModule="Gifu">
+                                <rect key="frame" x="51.666666666666657" y="59" width="310.66666666666674" height="310.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DaT-f9-6vM" secondAttribute="height" multiplier="1:1" id="sCR-uw-o7W"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tib-Xk-pov">
+                                <rect key="frame" x="15" y="384.66666666666674" width="384" height="462.33333333333326"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BMO-fX-oUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="150.66666666666666"/>
+                                        <string key="text">Name:
+ Luis Guerra</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" name="labelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Avy-NT-tsa">
+                                        <rect key="frame" x="0.0" y="155.66666666666669" width="384" height="151"/>
+                                        <string key="text">Tlf: 
++ 34 652 806 329</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" name="labelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lOt-6w-gr1">
+                                        <rect key="frame" x="0.0" y="311.66666666666669" width="384" height="150.66666666666669"/>
+                                        <string key="text">Email
+luisguerradm@gmail.com</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <color key="textColor" name="labelColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l8T-dY-DXU"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DaT-f9-6vM" firstAttribute="width" secondItem="I4X-TA-QNB" secondAttribute="width" multiplier="0.75" id="3Pc-RV-gjv"/>
+                            <constraint firstItem="l8T-dY-DXU" firstAttribute="trailing" secondItem="Tib-Xk-pov" secondAttribute="trailing" constant="15" id="54f-2T-vxG"/>
+                            <constraint firstItem="Tib-Xk-pov" firstAttribute="centerX" secondItem="I4X-TA-QNB" secondAttribute="centerX" id="Fxf-Qj-BS9"/>
+                            <constraint firstItem="Tib-Xk-pov" firstAttribute="leading" secondItem="l8T-dY-DXU" secondAttribute="leading" constant="15" id="IZQ-Hj-cTD"/>
+                            <constraint firstItem="DaT-f9-6vM" firstAttribute="centerX" secondItem="I4X-TA-QNB" secondAttribute="centerX" id="UxY-8a-7Sa"/>
+                            <constraint firstItem="Tib-Xk-pov" firstAttribute="top" secondItem="DaT-f9-6vM" secondAttribute="bottom" constant="15" id="dyz-I2-3m6"/>
+                            <constraint firstItem="DaT-f9-6vM" firstAttribute="top" secondItem="l8T-dY-DXU" secondAttribute="top" constant="15" id="j7E-ff-u1M"/>
+                            <constraint firstItem="l8T-dY-DXU" firstAttribute="bottom" secondItem="Tib-Xk-pov" secondAttribute="bottom" constant="15" id="vlt-mk-CsA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yd3-JL-rOO"/>
+                    <connections>
+                        <outlet property="logoGif" destination="DaT-f9-6vM" id="S6Z-qc-t3a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ay0-3G-rEC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="343.47826086956525" y="51.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="labelColor">
+            <color red="0.17800000309944153" green="0.17800000309944153" blue="0.18999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
